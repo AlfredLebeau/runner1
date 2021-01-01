@@ -12,11 +12,10 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello world2"
-      - name: multiline script
-        run: |
-          node -v
-          npm -v
-
+      #- name: multiline script
+      #  run: |
+      #    node -v
+      #    npm -v
 #on: [push]
 
 #name: self-hosted-example
