@@ -3,6 +3,8 @@ name: Shell Commands
 on: [push]
 
 jobs:
+  build:
+    runs-on: [self-hosted]
   run-shell-command:
     runs-on: ubuntu-18.04
     steps:
