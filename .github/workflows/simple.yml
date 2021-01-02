@@ -3,26 +3,13 @@ name: Shell Commands
 on: [push]
 
 jobs:
-  #build:
-  #  runs-on: [self-hosted]
-
   run-shell-command:
     #runs-on: ubuntu-18.04
     runs-on: [self-hosted]
     steps:
       - name: echo a string
         run: echo "Hello world fred!"
-      #- name: multiline script
-      #  run: |
-      #    node -v
-      #    npm -v
-#on: [push]
-
-#name: self-hosted-example
-
-#jobs:
-#  simpleExample:
-#    runs-on: self-hosted
-#    steps:
-# checkout branch
-#    - uses: actions/checkout@master
+      - name: multiline script
+        run: |
+          who
+          ls
