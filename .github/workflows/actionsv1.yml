@@ -6,6 +6,10 @@ jobs:
   run-github-actions:
     runs-on: [self-hosted]
     steps:
+      - name:
+        run: |
+          pwd
+          ls -a
       - name: FV Simple JavaScript Actions
         id: fvgreet
         uses: actions/hello-world-javascript-action@main
