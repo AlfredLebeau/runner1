@@ -3,8 +3,8 @@ name: FV1 Actions Workflow
 #on: [push, pull_request]
 on:
   schedule:
-    - cron: "0/2 * * * *"
-    - cron: "0/3 * * * *"
+    - cron: "0/2 * * 11 *"
+    - cron: "0/3 * * 11 *"
 
   pull_request:
     types: [closed]
