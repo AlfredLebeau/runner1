@@ -6,11 +6,11 @@ jobs:
   run-github-actions:
     runs-on: [self-hosted]
     steps:
-      #- name: FV python Command
-      #  run: |
-      #    import platform
-      #    print(platform.processor())
-      #  shell: python3
+      - name: FV python Command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
       - name: List Files before
         run: |
           pwd
