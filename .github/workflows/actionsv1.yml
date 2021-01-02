@@ -21,6 +21,7 @@ jobs:
         run: |
           pwd
           ls -a
+          pwd
       - name: FV Simple JavaScript Actions
         id: fvgreet
         uses: actions/hello-world-javascript-action@main
