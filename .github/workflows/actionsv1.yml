@@ -6,12 +6,18 @@ jobs:
   run-github-actions:
     runs-on: [self-hosted]
     steps:
-      - name: FV python Command
+      #- name: FV python Command
+      #  run: |
+      #    import platform
+      #    print(platform.processor())
+      #  shell: python3
+      - name: List Files before
         run: |
-          import platform
-          print(platform.processor())
-        shell: python3
-      - name: List Files
+          pwd
+          ls -a
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: List Files after
         run: |
           pwd
           ls -a
