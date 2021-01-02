@@ -14,7 +14,7 @@ jobs:
       - name: List Files before
         run: |
           pwd
-          ls -a
+          ls /home/
       - name: Checkout
         uses: actions/checkout@v1
       - name: List Files after
