@@ -7,9 +7,9 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - name: FV Simple JavaScript Actions
-        id: fvgreet
-        uses: actions/hello-world-javascript-action@v1
+        #id: fvgreet
+        uses: actions/hello-world-javascript-action@main
         with:
           who-to-greet: Frederic
-      - name: FV Log Greeting Time
-        run: echo "${{ step.fvgreet.outputs.time }}"
+      #- name: FV Log Greeting Time
+      #run: echo "${{ step.fvgreet.outputs.time }}"
