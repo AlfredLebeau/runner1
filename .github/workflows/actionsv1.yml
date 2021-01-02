@@ -14,8 +14,9 @@ jobs:
       - name: List Files before
         run: |
           pwd
+          python3 /
+          python /
           ls /home/
-          python3
       - name: Checkout
         uses: actions/checkout@v1
       - name: List Files after
