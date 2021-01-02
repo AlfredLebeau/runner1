@@ -10,4 +10,6 @@ jobs:
       - name: echo a string
         run: echo "Hello world fred!"
       - name: multiline script
-        run: ls -a
+        run: |
+          ls -a
+          pwd
