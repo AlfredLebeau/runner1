@@ -7,7 +7,12 @@ jobs:
   deploy:
     runs-on: [self-hosted]
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: List Files after
+        run: |
+          pwd
+          ls -a
 
       # - name: Configure AWS Credentials
       #   uses: aws-actions/configure-aws-credentials@v1
@@ -16,9 +21,9 @@ jobs:
       #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       #     aws-region: us-east-1
 
-      - name: Trigger deploy
-        uses: AlfredLebeau/runner1@master
-        #env:
-        #  KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
-        with:
-          args: apply 00-namespace.yml
+      #- name: Trigger deploy
+      #  uses: AlfredLebeau/runner1@master
+      #env:
+      #  KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+      #  with:
+      #    args: apply 00-namespace.yml
