@@ -25,7 +25,7 @@ jobs:
 
       - name: Trigger deploy
         uses: AlfredLebeau/runner1
-        #env:
-        #  KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+        env:
+          KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
           args: apply 00-namespace.yml
