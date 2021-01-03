@@ -13,6 +13,7 @@ jobs:
         run: |
           pwd
           ls -a
+          kubectl version
 
       # - name: Configure AWS Credentials
       #   uses: aws-actions/configure-aws-credentials@v1
