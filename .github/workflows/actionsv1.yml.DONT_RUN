@@ -2,8 +2,19 @@ name: FV1 Actions Workflow
 
 #on:
 on:
-  repository_dispatch:
-    types: [fvbuild]
+  push:
+    branches:
+      - master
+      - "feature/*" #see match https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+    #tags:
+    #- v1.*
+
+    #paths
+
+  #from a post:
+  #repository_dispatch:
+  #types: [fvbuild]
+
   # https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#create-a-repository-dispatch-event
   #https://api.github.com/repos/AlfredLebeau/runner1/dispatches
   #schedule:
