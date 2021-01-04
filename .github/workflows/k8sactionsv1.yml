@@ -12,6 +12,5 @@ jobs:
       - name: List Files after
         run: |
           pwd
-          pwd
           ls -a
           kubectl version
